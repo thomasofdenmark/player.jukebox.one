@@ -74,11 +74,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     </firebase-collection>
 
     <div class="header">
-      <h1>jukebox one</h1>
-    </div>
-
-    <div class="layout horizontal center-center">
+      <span class="logo"><a>jukebox one</a></span>
       <h2>[[jukebox.name]]</h2>
+      <span class="search">
+        <youtube-lookup style="display:inline-block;" id="youtubeLookup"
+                        api-key="{{youtubeApiKey}}">
+        </youtube-lookup>
+      </span>
     </div>
     
     <div class="layout horizontal center-center">
@@ -92,9 +94,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     </div>
 
     <div class="layout horizontal center-center">
-      <youtube-lookup id="youtubeLookup"
-                      api-key="{{youtubeApiKey}}">
-      </youtube-lookup>
+      
     </div>
 
     <div class="layout horizontal center-center">

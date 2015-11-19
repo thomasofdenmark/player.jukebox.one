@@ -25,7 +25,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     --dark-primary-color:       #388E3C;
     --default-primary-color:    #4CAF50;
     --light-primary-color:      #C8E6C9;
-    --text-primary-color:       #FFFFFF;
+    --text-primary-color:       #212121;
     --accent-color:             #FFEB3B;
     --primary-background-color: #C8E6C9;
     --primary-text-color:       #212121;
@@ -50,13 +50,29 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   }
 
   body {
-    background: var(--default-primary-color);
+    background: #fafafa;
     font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color: var(--text-primary-color);
   }
 
-  .header h1{
-    margin-left: 30px;
+  .header {
+    padding: 0 20px;
+    height: 70px;
+    background-color: #333;
+    @apply(--layout-horizontal);
+    @apply(--layout-center);
+  }
+
+  .logo {
+    font-size: 20px;
+    color: #222;
+    font-weight: bold;
+    @apply(--layout-flex);
+  }
+
+  .search {
+    @apply(--layout-flex);
+    @apply(--layout-end-justified);
   }
 
   .rotate-90 {
